@@ -1,0 +1,19 @@
+{
+  "name": "Gunay Bot",
+  "description": "Telegram tag botu - Heroku-da çalışır",
+  "repository": "https://github.com/senin-istifadeci-adin/gunay-bot",
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "scripts": {
+    "postdeploy": "echo 'Gunay bot hazırdır!'"
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  }
+}
